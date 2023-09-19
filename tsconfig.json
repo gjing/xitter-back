@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {
-      "types": ["bun-types"] // this is necessary
-    }
+  "compilerOptions": {
+    "types": ["bun-types"] // this is necessary
   }
+}
