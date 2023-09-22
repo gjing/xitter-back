@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.ATLAS_URI
-console.log("#####################");
-console.log(MONGODB_URI);
 
 export const connectDb = async () => {
   try {

@@ -1,5 +1,5 @@
 {
-  "dependencies": { "bun": "^1.0.1", "cors": "^2.8.5", "express": "^4.18.2", "mongodb": "^6.1.0", "mongodb-client-encryption": "^6.0.0", "mongoose": "^7.5.2", "uuid": "^9.0.1" },
+  "dependencies": { "bun": "^1.0.1", "cors": "^2.8.5", "express": "^4.18.2", "mongodb": "^6.1.0", "mongodb-client-encryption": "^6.0.0", "mongoose": "^7.5.2", "passport": "^0.6.0", "passport-jwt": "^4.0.1", "passport-local": "^1.0.0", "uuid": "^9.0.1" },
   "devDependencies": {
     "bun-types": "^1.0.1"
   },

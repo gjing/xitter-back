@@ -3,6 +3,7 @@ import cors from "cors";
 import { connectDb } from './db/conn';
 import xitsRouter from "./controllers/Xit";
 import usersRouter from "./controllers/User";
+import dummyRouter from "./controllers/dummy_api";
 
 connectDb();
 
@@ -13,8 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 // Load routes
-app.use("/xits", xitsRouter);
-app.use("/users", usersRouter);
+app.use("/api/v1/xits", xitsRouter);
+app.use("/api/v1/users", usersRouter);
+app.use("/api/dummy", dummyRouter)
 
 // Global error handling
 app.use((err, _req, res, next) => {
