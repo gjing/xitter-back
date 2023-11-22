@@ -5,7 +5,7 @@ const xitRouter = express()
 
 
 const getXitController: RequestHandler = async (req, res, next) => {
-    const id = 0;
+    const id = req.params.id;
     for (let xit of xits) {
         if (xit["_id"] == id) {
             res.send(JSON.stringify(xit))

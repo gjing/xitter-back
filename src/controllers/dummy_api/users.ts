@@ -4,7 +4,7 @@ import { RequestHandler } from 'express';
 const userRouter = express()
 
 const getUserController: RequestHandler = async (req, res, next) => {
-    const id = 0;
+    const id = req.params.id;
     for (let user of users) {
         if (user["_id"] == id) {
             res.send(JSON.stringify(user))
